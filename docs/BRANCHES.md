@@ -4,7 +4,9 @@
 
 ![Branch purposes](../images/Endorys_Branches_and_Purposes.png)
 
-*Research programme map; categories are not validated indications.*
+**Concept illustration—not a prototype or measured output.**
+
+Research programme map; categories are not validated indications.
 
 ## Platform components
 

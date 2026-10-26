@@ -11,7 +11,7 @@ Reviewed: 26 October 2026. This is a documentation maturity statement, not a for
 | Explore and Vascular | Application hypotheses | A specific target decision and independent comparator |
 | Surgical and Therapy | Concept illustrations and research categories | Separate feasibility, safety and clinical programmes |
 | Bench, Evidence and Challenge | Protocols, proof register and critique | Executed studies, raw records and failure reports |
-| Licensing | Decision pending | Explicit maintainer choice for each material type |
+| Licensing | Apache-2.0 software; CC BY 4.0 documentation | Hardware, visuals and datasets need separate terms |
 
 ## Evidence vocabulary
 
