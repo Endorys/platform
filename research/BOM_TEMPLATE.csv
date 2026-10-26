@@ -1,0 +1,5 @@
+subsystem,part_number,revision,supplier,quantity,unit_cost,currency,datasheet,calibration_status,selection_status
+Acoustic source,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Not selected
+Receiver,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Not selected
+Digitizer,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Not selected
+Fixture,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Not selected

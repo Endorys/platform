@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1-draft",
+  "data_origin": "synthetic",
+  "experiment_id": "EXAMPLE_ONLY",
+  "run_id": "example-001",
+  "sample_interval_s": 1e-7,
+  "geometry": {
+    "distance_m": 0.04,
+    "uncertainty_m": null
+  },
+  "calibration_ids": [],
+  "raw_file": null,
+  "quality": {
+    "status": "example_not_measurement"
+  },
+  "analysis": {
+    "version": null,
+    "estimated_quantity": null
+  }
+}
