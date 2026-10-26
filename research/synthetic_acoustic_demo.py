@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Sadhu Shobab Bollipo
 """Synthetic illustration only. No hardware, tissue or diagnostic validation."""
 import csv, json, math, random
 from pathlib import Path

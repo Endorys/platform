@@ -1,7 +1,7 @@
 # Licensing status
 
-A project-wide reuse license has not yet been selected. Public visibility does not itself grant unrestricted permission to reproduce, modify or redistribute all material. No blanket open-source or open-hardware license is asserted by this documentation release.
+Original software is now licensed under Apache-2.0 and original documentation under CC BY 4.0, effective 26 October 2026.
 
-The maintainer should explicitly select terms for original software, documentation, data, hardware designs and visual assets, which may require different treatment. Third-party papers, trademarks and linked content retain their respective terms. A citation request is not a substitute for a license. Patent rights and freedom to operate require separate consideration.
+The authoritative [license scope](../LICENSE.md) identifies covered files and exclusions. Generated visuals, hardware designs, third-party material and future experimental datasets are not included in those grants unless separately licensed. Read the full license texts before reuse.
 
-Until terms are selected, contact sadhu.shobab@gmail.com about intended reuse. This status page records an unresolved project decision; it is not legal advice.
+This supersedes the earlier pending-license status; it does not establish clinical validation or third-party patent clearance.
