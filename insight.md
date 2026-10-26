@@ -1,0 +1,18 @@
+# Endorys Insight
+
+Acquisition-aware reconstruction, inference and response tracking.
+
+## Workstreams
+
+- Signal processing and reconstruction
+- Calibration and multimodal registration
+- Tissue response and recovery models
+- Uncertainty and failure detection
+- Longitudinal change and trajectory
+- Adaptive interrogation and tissue-state modelling research
+
+## Evidence status
+
+Research concept. Each proposed measurement, inference or intervention requires task-specific validation. Naming does not establish performance or readiness.
+
+[All branches](BRANCH_REGISTER.md)

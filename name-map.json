@@ -1,0 +1,74 @@
+[
+  {
+    "previous": "JUPITER",
+    "current": "Endorys Platform",
+    "slug": "platform",
+    "purpose": "Overall ultrasound-led multiphysics tissue research platform"
+  },
+  {
+    "previous": "KAVACHA",
+    "current": "Endorys Matrix",
+    "slug": "matrix",
+    "purpose": "Conformal geometry-aware sensing and interrogation surface"
+  },
+  {
+    "previous": "ANAVIXA",
+    "current": "Endorys Insight",
+    "slug": "insight",
+    "purpose": "Acquisition-aware reconstruction, inference and response tracking"
+  },
+  {
+    "previous": "ASHWINI",
+    "current": "Endorys Interface",
+    "slug": "interface",
+    "purpose": "Mechanical tissue interrogation, coupling, sensor interfaces and disposable components"
+  },
+  {
+    "previous": "CIELO",
+    "current": "Endorys Therapy",
+    "slug": "therapy",
+    "purpose": "Therapeutic acoustics and intervention research"
+  },
+  {
+    "previous": "SUSHRUTHA / SUSHRUTA",
+    "current": "Endorys Surgical",
+    "slug": "surgical",
+    "purpose": "Surgical and procedural tissue-awareness research"
+  },
+  {
+    "previous": "APOLLO",
+    "current": "Endorys Continuum",
+    "slug": "continuum",
+    "purpose": "Spatial-temporal tissue data, longitudinal memory and clinical integration"
+  },
+  {
+    "previous": "ATLAS",
+    "current": "Endorys Evidence",
+    "slug": "evidence",
+    "purpose": "Evidence, provenance, benchmarks and validation"
+  },
+  {
+    "previous": "COLUMBUS",
+    "current": "Endorys Explore",
+    "slug": "explore",
+    "purpose": "Clinical discovery and materials/NDT exploration"
+  },
+  {
+    "previous": "JONWICK",
+    "current": "Endorys Bench",
+    "slug": "bench",
+    "purpose": "Physical experiments and prototype testing"
+  },
+  {
+    "previous": "LUCIFER",
+    "current": "Endorys Challenge",
+    "slug": "challenge",
+    "purpose": "Critical review, falsification and failure analysis"
+  },
+  {
+    "previous": "VIA",
+    "current": "Endorys Vascular",
+    "slug": "vascular",
+    "purpose": "Vascular and procedural application programme"
+  }
+]
