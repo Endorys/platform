@@ -1,56 +1,61 @@
 # Endorys
 
-Ultrasound-led multiphysics tissue research.
+**Ultrasound-led multiphysics tissue research.**
 
-Founder and concept originator: **Sadhu Shobab Bollipo**.
+Exploring how controlled acoustic interrogation, conformal sensing and calibrated analysis could characterize tissue response across clinical and materials research.
 
-Endorys is the current umbrella identity for the programme previously called JUPITER. This naming baseline takes effect on **26 October 2026**. It preserves the breast-first origin, subsequent regional applications and materials/NDT exploration.
+[Documentation](docs/README.md) · [Get started](GETTING_STARTED.md) · [Research status](docs/STATUS.md) · [Branches](docs/BRANCHES.md) · [Contribute](CONTRIBUTING.md)
 
-The proposed architecture combines a selected acoustic source/contact, distributed receiving transducers, geometry/contact calibration, synchronized acquisition and external computation. Optional sensors and interventions require application-specific evidence. This is a research concept. Rebranding does not establish diagnostic or therapeutic performance.
+![Endorys platform concept](images/Endorys_General_Introduction_Cover.png)
 
-## Start here
+*Concept illustration. Proposed capabilities and clinical scenarios require experimental validation.*
 
-- [Complete branch register](BRANCH_REGISTER.md)
-- [Naming standard and historical aliases](NAMING.md)
-- [Platform architecture](platform.md)
-- [Clinical and materials exploration](explore.md)
-- [Therapy categories](therapy.md)
+## What is here today?
 
-| Previous name | Current name | Purpose |
-|---|---|---|
-| JUPITER | **Endorys Platform** | Overall ultrasound-led multiphysics tissue research platform |
-| KAVACHA | **Endorys Matrix** | Conformal geometry-aware sensing and interrogation surface |
-| ANAVIXA | **Endorys Insight** | Acquisition-aware reconstruction, inference and response tracking |
-| ASHWINI | **Endorys Interface** | Mechanical tissue interrogation, coupling, sensor interfaces and disposable components |
-| CIELO | **Endorys Therapy** | Therapeutic acoustics and intervention research |
-| SUSHRUTHA / SUSHRUTA | **Endorys Surgical** | Surgical and procedural tissue-awareness research |
-| APOLLO | **Endorys Continuum** | Spatial-temporal tissue data, longitudinal memory and clinical integration |
-| ATLAS | **Endorys Evidence** | Evidence, provenance, benchmarks and validation |
-| COLUMBUS | **Endorys Explore** | Clinical discovery and materials/NDT exploration |
-| JONWICK | **Endorys Bench** | Physical experiments and prototype testing |
-| LUCIFER | **Endorys Challenge** | Critical review, falsification and failure analysis |
-| VIA | **Endorys Vascular** | Vascular and procedural application programme |
+| Available | Status |
+|---|---|
+| Platform architecture and branch programmes | Research specifications |
+| Literature review and 28-item proof register | External precedents and unresolved Endorys questions |
+| Eight experiment outlines | Planned; no execution claimed |
+| Python acoustic example | Runnable synthetic illustration with self-checks |
+| 19 concept images | Illustrative; not device output |
+| Integrated physical or clinical results | Not established in this repository |
 
-## Research status and reuse
+## Choose your path
 
-This repository documents a proposed research platform. It does not contain a validated medical device or established diagnostic or therapeutic results. Hardware designs, software implementations and experimental datasets will be identified separately as they become available.
+| I want to… | Start here |
+|---|---|
+| Understand the platform | [Architecture](research/ARCHITECTURE.md) |
+| Assess scientific credibility | [Evidence and validation guide](docs/EVIDENCE.md) |
+| Build or reproduce an experiment | [Engineering guide](docs/ENGINEERING.md) |
+| Explore applications | [Branches and applications](docs/BRANCHES.md) |
+| Run something now | [Synthetic example quick start](GETTING_STARTED.md#run-the-synthetic-example) |
+| Help develop Endorys | [Contribution guide](CONTRIBUTING.md) and [open issues](https://github.com/Endorys/platform/issues) |
 
-A reuse license has not yet been selected. Public visibility alone does not grant an open-source license. Licensing for software, hardware and documentation will be stated explicitly before an open-source release.
+## How the pieces fit
 
-## Contributing
+Matrix provides the proposed sensing surface; Interface defines contact and controlled loading; Insight processes registered measurements; Continuum preserves longitudinal context. Bench, Evidence and Challenge support reproducibility and critical evaluation. Explore, Vascular, Surgical and Therapy investigate specific applications.
 
-Start by identifying one research question, its reference measurement and a reproducible experiment. Distinguish proposed functions, simulations and measured results. Please do not submit patient data, confidential employer information or third-party proprietary designs.
+[See all branches](docs/BRANCHES.md) · [View the visual gallery](images/README.md)
 
-## Attribution
+## Current priority
 
-Founder and concept originator: Sadhu Shobab Bollipo. The current naming baseline is dated 26 October 2026. The historical JUPITER names are retained in the naming register for traceability.
+Establish a repeatable fixed-geometry acoustic phantom baseline, then determine whether coupling, geometry and routing errors permit the intended measurement. See [Experiment 001](research/EXPERIMENT_001.md) and the [evidence-gated roadmap](research/ROADMAP.md).
 
+## Repository map
 
-## Detailed research library
+| Location | Contents |
+|---|---|
+| [docs/](docs/README.md) | Guided documentation, status, engineering and evidence navigation |
+| [research/](research/README.md) | Detailed specifications, protocols, reviews, templates and synthetic example |
+| [images/](images/README.md) | Concept gallery and image provenance |
+| [.github/](.github/) | Issue and pull-request templates |
+| [BRANCH_REGISTER.md](BRANCH_REGISTER.md), [NAMING.md](NAMING.md) | Canonical branch identities and historical aliases |
 
-- [Research documentation and experiment plans](research/README.md)
-- [28-item physical proof register](research/EVIDENCE_REGISTER.md)
-- [Literature and prior-art review](research/LITERATURE_REVIEW.md)
-- [Updated concept image gallery](images/README.md)
-- [Contribution guidance](research/CONTRIBUTING.md)
-- [Licensing status](research/LICENSING_STATUS.md)
+## Project and reuse
+
+Founded by **Sadhu Shobab Bollipo**, Bengaluru, India. Endorys continues the programme previously called JUPITER, preserving its breast-first motivation and later clinical and materials/NDT exploration.
+
+Current stage: research concept and synthetic example. No validated medical device, clinical performance or therapeutic efficacy is asserted. See [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md).
+
+Reuse licensing remains [pending](research/LICENSING_STATUS.md). Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
