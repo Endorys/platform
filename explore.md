@@ -95,3 +95,16 @@ Acoustic response, mechanical response, directional/solid-fluid models, electric
 Research concept. Each proposed measurement, inference or intervention requires task-specific validation. Naming does not establish performance or readiness.
 
 [All branches](BRANCH_REGISTER.md)
+
+
+## Development focus
+
+Retain both opportunity tracks. For every candidate specify the target decision, specimen/population, reference and stop criteria; categories are not established indications.
+
+## Evidence and next work
+
+This branch remains a research programme. No branch-specific physical or clinical performance is established by the current public package. Link each proposed capability to a protocol, raw evidence and limitations before treating it as demonstrated.
+
+- [Detailed clinical discovery and materials/ndt documentation](research/APPLICATION_ASSESSMENT.md)
+- [Common roadmap](research/ROADMAP.md)
+- [Result reporting template](research/RESULTS_TEMPLATE.md)

@@ -44,3 +44,13 @@ Start by identifying one research question, its reference measurement and a repr
 ## Attribution
 
 Founder and concept originator: Sadhu Shobab Bollipo. The current naming baseline is dated 26 October 2026. The historical JUPITER names are retained in the naming register for traceability.
+
+
+## Detailed research library
+
+- [Research documentation and experiment plans](research/README.md)
+- [28-item physical proof register](research/EVIDENCE_REGISTER.md)
+- [Literature and prior-art review](research/LITERATURE_REVIEW.md)
+- [Updated concept image gallery](images/README.md)
+- [Contribution guidance](research/CONTRIBUTING.md)
+- [Licensing status](research/LICENSING_STATUS.md)

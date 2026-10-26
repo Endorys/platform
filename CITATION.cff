@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the specific repository revision used. This documentation is not a validated medical device."
+title: "Endorys: research architecture and validation documentation"
+type: software
+authors:
+  - family-names: Bollipo
+    given-names: Sadhu Shobab
+repository-code: "https://github.com/Endorys/platform"
+url: "https://github.com/Endorys/platform"
