@@ -2,6 +2,13 @@
 
 Documentation changes are recorded separately from experimental progress.
 
+## 2026-10-26 — Public introduction readiness
+
+- Labelled each showcased visual “Concept illustration—not a prototype or measured output.”
+- Stated the immediate goal: a reproducible acoustic phantom experiment.
+- Added a focused invitation for independent review of Experiment 001.
+- Licensed original software under Apache-2.0 and original documentation under CC BY 4.0 with explicit exclusions.
+
 ## 2026-10-26 — Repository organization
 
 - Added a guided docs portal, thematic catalogue and separate evidence/engineering reading paths.
@@ -21,4 +28,4 @@ These changes do not establish new physical or clinical results.
 - Published 19 renamed concept illustrations with provenance.
 - Added a deterministic synthetic acoustic example and citation metadata.
 
-Licensing remains pending.
+Licensing was pending at that earlier baseline; the public-introduction update above supersedes it.

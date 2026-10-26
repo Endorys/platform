@@ -36,4 +36,4 @@ Inspect [the script](research/synthetic_acoustic_demo.py), [data specification](
 - Software contributor: improve a reproducible example with explicit assumptions.
 - Domain specialist: define one application decision and its independent reference.
 
-Use the [contribution guide](CONTRIBUTING.md). Hardware specifications, physical datasets and licensing are unresolved; do not assume a complete buildable device is available.
+Use the [contribution guide](CONTRIBUTING.md). Hardware specifications and physical datasets remain unresolved; reuse follows [license scope](LICENSE.md); do not assume a complete buildable device is available.

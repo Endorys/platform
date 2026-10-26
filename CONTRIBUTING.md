@@ -4,7 +4,7 @@ Thank you for helping make Endorys reproducible and scientifically useful.
 
 ## Before starting
 
-Read [project status](docs/STATUS.md), [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md) and [licensing status](research/LICENSING_STATUS.md). Licensing is not yet selected; public access does not grant blanket reuse rights.
+Read [project status](docs/STATUS.md), [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md) and [licensing status](research/LICENSING_STATUS.md). Original software uses Apache-2.0 and original documentation uses CC BY 4.0; read [license scope](LICENSE.md) for coverage and exclusions. Contributions to covered material should use the applicable license and identify any separate third-party terms.
 
 ## Workflow
 

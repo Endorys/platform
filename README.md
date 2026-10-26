@@ -8,7 +8,7 @@ Exploring how controlled acoustic interrogation, conformal sensing and calibrate
 
 ![Endorys platform concept](images/Endorys_General_Introduction_Cover.png)
 
-*Concept illustration. Proposed capabilities and clinical scenarios require experimental validation.*
+**Concept illustration—not a prototype or measured output.**
 
 ## What is here today?
 
@@ -38,9 +38,11 @@ Matrix provides the proposed sensing surface; Interface defines contact and cont
 
 [See all branches](docs/BRANCHES.md) · [View the visual gallery](images/README.md)
 
-## Current priority
+## Immediate goal and invitation
 
-Establish a repeatable fixed-geometry acoustic phantom baseline, then determine whether coupling, geometry and routing errors permit the intended measurement. See [Experiment 001](research/EXPERIMENT_001.md) and the [evidence-gated roadmap](research/ROADMAP.md).
+**Immediate goal: a reproducible acoustic phantom experiment.** Establish a repeatable fixed-geometry acoustic phantom baseline, then determine whether coupling, geometry and routing errors permit the intended measurement. See [Experiment 001](research/EXPERIMENT_001.md) and the [evidence-gated roadmap](research/ROADMAP.md).
+
+**Invitation: independent protocol review.** We invite an ultrasound/acoustic measurement researcher to review [Experiment 001](research/EXPERIMENT_001.md), especially coupling controls, geometry uncertainty and acceptance criteria, before physical data collection. Please open an [Experiment proposal issue](https://github.com/Endorys/platform/issues/new/choose) titled “E001 independent protocol review.”
 
 ## Repository map
 
@@ -58,4 +60,4 @@ Founded by **Sadhu Shobab Bollipo**, Bengaluru, India. Endorys continues the pro
 
 Current stage: research concept and synthetic example. No validated medical device, clinical performance or therapeutic efficacy is asserted. See [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md).
 
-Reuse licensing remains [pending](research/LICENSING_STATUS.md). Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
+Original software is licensed under Apache-2.0 and original documentation under CC BY 4.0. Hardware designs, generated visuals and third-party material are excluded unless separately licensed. See [license scope](LICENSE.md) before reuse. Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
