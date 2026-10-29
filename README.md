@@ -1,5 +1,21 @@
 # Endorys
 
+## Run the E001 research package
+
+[Start here: executable experiment package](research/e001_README.md) · [Protocol](research/e001_PROTOCOL.md) · [Record schema](research/e001_record.schema.json) · [Automated software checks](https://github.com/Endorys/platform/actions/workflows/e001-research-checks.yml)
+
+The package includes raw-file integrity checks, waveform quality checks, an illustrative peak estimator, partial uncertainty reporting, plots, synthetic examples and physical-experiment planning templates. Python 3.11+; no third-party runtime dependencies.
+
+```sh
+cd research
+python e001_demo.py --out e001_demo_output
+python -m unittest e001_tests -v
+```
+
+**Synthetic demonstration only.** Passing software tests does not establish hardware, phantom or clinical performance. The immediate physical goal remains a reproducible acoustic phantom experiment. Equipment and acceptance criteria require review before collection. See [package licenses](research/e001_LICENSE.md).
+
+
+
 **Ultrasound-led multiphysics tissue research.**
 
 Exploring how controlled acoustic interrogation, conformal sensing and calibrated analysis could characterize tissue response across clinical and materials research.
