@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "data_origin": "synthetic",
+  "threshold_scope": "toy_demo_only",
+  "noise_window_s": [
+    0,
+    1e-05
+  ],
+  "signal_window_s": [
+    1.5e-05,
+    4.5e-05
+  ],
+  "min_peak": 0.1,
+  "min_peak_to_noise_ratio": 10.0,
+  "rail_abs": 1.0,
+  "max_rail_fraction": 0.005,
+  "ambiguous_peak_fraction": 0.95,
+  "minimum_peak_separation_s": 2e-06
+}

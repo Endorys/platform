@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Endorys/platform/blob/main/research/e001_record.schema.json",
+  "title": "E001 non-biological phantom record v1.0",
+  "description": "Research structure only. See e001_LICENSE.md. Not a clinical record or physical validation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "experiment_id",
+    "protocol_version",
+    "data_origin",
+    "specimen_kind",
+    "specimen_id",
+    "session_id",
+    "record_status",
+    "quality_flags",
+    "calibration_id",
+    "hardware_revision",
+    "source_id",
+    "receiver_id",
+    "coupling",
+    "temperature_c",
+    "acquisition",
+    "geometry",
+    "waveform"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "experiment_id": {
+      "const": "E001",
+      "type": "string"
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_origin": {
+      "type": "string",
+      "enum": [
+        "synthetic",
+        "physical"
+      ]
+    },
+    "specimen_kind": {
+      "const": "non_biological_phantom",
+      "type": "string"
+    },
+    "specimen_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_status": {
+      "type": "string",
+      "enum": [
+        "complete",
+        "rejected",
+        "incomplete"
+      ]
+    },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "poor_contact",
+          "trigger_fault",
+          "missing_channel",
+          "operator_rejection"
+        ]
+      }
+    },
+    "calibration_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hardware_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "receiver_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coupling": {
+      "type": "string",
+      "enum": [
+        "reference",
+        "reduced",
+        "disconnected",
+        "unknown"
+      ]
+    },
+    "temperature_c": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "acquisition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sample_interval_s",
+        "trigger_time_s",
+        "electronic_delay_s",
+        "trigger_standard_uncertainty_s",
+        "delay_standard_uncertainty_s",
+        "gain_setting",
+        "filter_setting",
+        "clock_domain"
+      ],
+      "properties": {
+        "sample_interval_s": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "trigger_time_s": {
+          "type": "number"
+        },
+        "electronic_delay_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "trigger_standard_uncertainty_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "delay_standard_uncertainty_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gain_setting": {
+          "type": "string",
+          "minLength": 1
+        },
+        "filter_setting": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clock_domain": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "coordinate_frame",
+        "path_length_m",
+        "path_standard_uncertainty_m"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "through_transmission"
+        },
+        "coordinate_frame": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path_length_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "path_standard_uncertainty_m": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "waveform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "format",
+        "time_unit",
+        "amplitude_unit",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "format": {
+          "type": "string",
+          "const": "csv_time_amplitude"
+        },
+        "time_unit": {
+          "type": "string",
+          "const": "s"
+        },
+        "amplitude_unit": {
+          "type": "string",
+          "enum": [
+            "V",
+            "synthetic_arb"
+          ]
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    }
+  }
+}

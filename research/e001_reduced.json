@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "E001",
+  "run_id": "reduced",
+  "protocol_version": "synthetic-demo-0.1",
+  "data_origin": "synthetic",
+  "specimen_kind": "non_biological_phantom",
+  "specimen_id": "toy-placeholder",
+  "session_id": "synthetic-session-01",
+  "record_status": "complete",
+  "quality_flags": [],
+  "calibration_id": "synthetic-not-calibrated-hardware",
+  "hardware_revision": "none-toy-generator",
+  "source_id": "toy-gaussian",
+  "receiver_id": "toy-samples",
+  "coupling": "reduced",
+  "temperature_c": null,
+  "acquisition": {
+    "sample_interval_s": 1e-07,
+    "trigger_time_s": 0.0,
+    "electronic_delay_s": 0.0,
+    "trigger_standard_uncertainty_s": 0.0,
+    "delay_standard_uncertainty_s": 0.0,
+    "gain_setting": "toy-unity",
+    "filter_setting": "none",
+    "clock_domain": "synthetic-clock"
+  },
+  "geometry": {
+    "mode": "through_transmission",
+    "coordinate_frame": "toy-fixed-line",
+    "path_length_m": 0.04,
+    "path_standard_uncertainty_m": 0.0001
+  },
+  "waveform": {
+    "path": "e001_reduced.csv",
+    "format": "csv_time_amplitude",
+    "time_unit": "s",
+    "amplitude_unit": "synthetic_arb",
+    "sha256": "756e73eff5d28b1758fcfb68578bc4f41cfabe503488ca96e76221adf42518c3"
+  }
+}

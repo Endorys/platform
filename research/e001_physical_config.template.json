@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "data_origin": "physical",
+  "threshold_scope": "protocol_prespecified",
+  "noise_window_s": null,
+  "signal_window_s": null,
+  "min_peak": null,
+  "min_peak_to_noise_ratio": null,
+  "rail_abs": null,
+  "max_rail_fraction": null,
+  "ambiguous_peak_fraction": null,
+  "minimum_peak_separation_s": null
+}
