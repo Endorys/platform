@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Sadhu Shobab Bollipo
+name: E001 research software checks
+on:
+  push:
+    paths:
+      - 'research/**'
+      - '.github/workflows/e001-research-checks.yml'
+  pull_request:
+    paths:
+      - 'research/**'
+      - '.github/workflows/e001-research-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  software-only:
+    name: Python ${{ matrix.python }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12']
+    defaults:
+      run:
+        working-directory: research
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Test schema, provenance and failure handling
+        run: python -m unittest e001_tests -v
+      - name: Run synthetic demonstration (not hardware validation)
+        run: python e001_demo.py --out e001_ci_output
+      - name: Check local Markdown file links
+        run: python e001_check_links.py .
