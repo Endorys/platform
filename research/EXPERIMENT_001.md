@@ -23,3 +23,10 @@ Numerical tolerances are TBD because no intended measurement specification or ca
 
 ## Deliverables
 Protocol version; fixture sketch; hardware inventory; calibration files; randomized run list; raw waveform files and checksums; analysis version; complete results including failures; decision to proceed, revise or stop.
+
+
+## Executable support package — 29 October 2026
+
+The [E001 package](e001_README.md) now provides a runnable offline pipeline, versioned record schema, integrity and quality checks, synthetic valid/rejected/incomplete examples, waveform plots, and software tests. Use the [protocol worksheet](e001_PROTOCOL.md), [acquisition checklist](e001_CHECKLIST.md) and [results template](e001_RESULTS_TEMPLATE.md) to prepare a physical experiment.
+
+The software demonstration is synthetic only. Its peak estimator and partial uncertainty are illustrative. Numerical physical settings, estimator validation, equipment selection and the full uncertainty budget remain unresolved; this experiment is still not executed.
