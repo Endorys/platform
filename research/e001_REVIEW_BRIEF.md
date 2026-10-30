@@ -12,6 +12,8 @@ and clinical validation are not being requested.
 Read the [protocol worksheet](e001_PROTOCOL.md) and the estimator/uncertainty
 limitations in [the runnable package](e001_README.md). Optional: run the
 [software reproduction exercise](e001_REPLICATION.md).
+The [measurement-model note](e001_MEASUREMENT_MODEL.md) highlights why a
+water/sample path cannot automatically be treated as a single-medium speed.
 
 ## Current evidence
 

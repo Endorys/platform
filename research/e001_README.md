@@ -17,6 +17,10 @@ python e001.py analyze e001_demo_output/synthetic_inputs/e001_reference.json --c
 
 Open `e001_demo_output/index.html` in a browser. The report links to raw-waveform SVG plots and provides a JSON summary. All inputs are generated locally and labelled synthetic. The generator uses Gaussian pulses plus noise, not an acoustic tissue simulator. It demonstrates two accepted toy conditions, five rejected records and a deliberately incomplete record that fails validation.
 
+Choose a fresh output location. The generator refuses an existing input-output
+directory; single-record analysis refuses existing analysis/plot filenames.
+Move or archive earlier reports explicitly rather than overwriting them.
+
 ## Files and interfaces
 
 | File | Purpose |
@@ -33,6 +37,7 @@ Open `e001_demo_output/index.html` in a browser. The report links to raw-wavefor
 | [e001_batch_tests.py](e001_batch_tests.py) | Duplicate, invalid-input, provenance and raw-preservation checks |
 | [e001_REPLICATION.md](e001_REPLICATION.md) | Independent software reproduction commands and expected results |
 | [e001_REVIEW_BRIEF.md](e001_REVIEW_BRIEF.md) | Bounded acoustic protocol review request |
+| [e001_MEASUREMENT_MODEL.md](e001_MEASUREMENT_MODEL.md) | Path/time matching, layered-path counterexample and partial-budget review |
 | [e001_check_links.py](e001_check_links.py) | Local Markdown file-link check; no external URL or anchor validation |
 | [e001_physical_config.template.json](e001_physical_config.template.json) | Intentionally unset physical-analysis configuration; cannot run unchanged |
 | [e001_LICENSE.md](e001_LICENSE.md) | Explicit licenses for this package |
@@ -68,6 +73,10 @@ may prevent creating a manifest. See [reproduction details](e001_REPLICATION.md)
 ## Estimator and uncertainty limitations
 
 This example finds the absolute peak in a prespecified time window after subtracting the noise-window mean. It subtracts supplied trigger time and electronic delay and divides supplied path length by the resulting peak transit time. It is **not a validated time-of-flight, attenuation, elastography or tissue classifier**. Oscillatory RF, multipath, ringing and changed pulse shape can bias the peak substantially. Do not report its output as calibrated sound speed without validating an appropriate estimator.
+
+The declared path length and corrected time must refer to the same path. Water,
+couplant and sample layers cannot be reduced to sample speed by dividing sample
+thickness by total transit time. See the [measurement-model review](e001_MEASUREMENT_MODEL.md).
 
 The reported **partial standard uncertainty** combines sample quantization (`dt/sqrt(12)`), supplied trigger/delay standard uncertainties and supplied path standard uncertainty, assuming independence. It excludes estimator bias, coupling, temperature dependence, correlation and model error. Zero values in toy inputs express generator assumptions, not perfect instrumentation. No full error budget, between-session confidence interval or diagnostic accuracy is claimed.
 
