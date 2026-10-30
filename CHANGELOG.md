@@ -2,6 +2,16 @@
 
 Documentation changes are recorded separately from experimental progress.
 
+## 2026-10-30 — E001 software audit and independent review
+
+- Added an explicit-record batch runner with HTML/JSON reporting, input/configuration/code hashes and environment metadata.
+- Kept missing, corrupt, duplicate-ID and quality-rejected inputs visible instead of silently omitting them. Existing batch outputs are never overwritten.
+- Rejected duplicate JSON keys and non-object analysis configurations.
+- Added software reproduction instructions, expected failure examples and a focused acoustic protocol review brief.
+- Extended CI to run batch audit tests and an accepted synthetic batch; refreshed engineering/status navigation.
+
+This is software and documentation progress. No physical acquisition, instrument validation, phantom result or clinical performance is established.
+
 ## 2026-10-26 — Public introduction readiness
 
 - Labelled each showcased visual “Concept illustration—not a prototype or measured output.”

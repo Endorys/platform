@@ -9,10 +9,12 @@ The package includes raw-file integrity checks, waveform quality checks, an illu
 ```sh
 cd research
 python e001_demo.py --out e001_demo_output
-python -m unittest e001_tests -v
+python -m unittest e001_tests e001_batch_tests -v
 ```
 
 **Synthetic demonstration only.** Passing software tests does not establish hardware, phantom or clinical performance. The immediate physical goal remains a reproducible acoustic phantom experiment. Equipment and acceptance criteria require review before collection. See [package licenses](research/e001_LICENSE.md).
+
+[Reproduce the software workflow](research/e001_REPLICATION.md) · [Review the acoustic protocol](research/e001_REVIEW_BRIEF.md)
 
 
 

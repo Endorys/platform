@@ -1,0 +1,10 @@
+# Local Python caches and documented generated software-demo reports.
+__pycache__/
+*.py[cod]
+/research/e001_demo_output/
+/research/e001_batch_output/
+/research/e001_ci_output/
+/research/e001_ci_batch/
+/research/reviewer_demo/
+/research/reviewer_batch/
+/research/reviewer_accepted/
