@@ -12,13 +12,21 @@ import re
 import statistics
 
 HERE = Path(__file__).resolve().parent
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 
 
 def read_json(path):
     def reject(value):
         raise ValueError("Non-finite JSON number: " + value)
-    return json.loads(Path(path).read_text(encoding="utf-8"), parse_constant=reject)
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("Duplicate JSON key: " + key)
+            result[key] = value
+        return result
+    return json.loads(Path(path).read_text(encoding="utf-8"), parse_constant=reject,
+                      object_pairs_hook=unique_object)
 
 
 def validate_schema(value, schema, location="record"):
@@ -116,6 +124,8 @@ def load_record(path):
 
 
 def config_check(config, origin):
+    if not isinstance(config, dict):
+        raise ValueError("Analysis configuration must be an object")
     required = {"schema_version", "data_origin", "threshold_scope", "noise_window_s",
                 "signal_window_s", "min_peak", "min_peak_to_noise_ratio",
                 "rail_abs", "max_rail_fraction", "ambiguous_peak_fraction",

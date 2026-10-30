@@ -1,6 +1,6 @@
 # Experiment 001: runnable research package
 
-Version 0.1.0 · 29 October 2026 · Sadhu Shobab Bollipo / Endorys
+Version 0.2.0 · 30 October 2026 · Sadhu Shobab Bollipo / Endorys
 
 **Immediate goal: a reproducible acoustic phantom experiment.** This package implements an offline software workflow and planning templates. No physical experiment, integrated prototype or clinical capability is established by this release.
 
@@ -10,7 +10,7 @@ Requires Python 3.11 or newer, with no third-party runtime packages. From this d
 
 ```sh
 python e001_demo.py --out e001_demo_output
-python -m unittest e001_tests -v
+python -m unittest e001_tests e001_batch_tests -v
 python e001.py validate e001_demo_output/synthetic_inputs/e001_reference.json
 python e001.py analyze e001_demo_output/synthetic_inputs/e001_reference.json --config e001_demo_output/synthetic_inputs/e001_demo_config.json --out e001_single_result
 ```
@@ -29,6 +29,10 @@ Open `e001_demo_output/index.html` in a browser. The report links to raw-wavefor
 | [e001_generate_demo.py](e001_generate_demo.py) | Deterministic synthetic fixture generator |
 | [e001_demo.py](e001_demo.py) | Runnable HTML/JSON/SVG demonstration |
 | [e001_tests.py](e001_tests.py) | Software failure and provenance tests |
+| [e001_batch.py](e001_batch.py) | Declared-record batch audit, failure-preserving manifest and HTML report |
+| [e001_batch_tests.py](e001_batch_tests.py) | Duplicate, invalid-input, provenance and raw-preservation checks |
+| [e001_REPLICATION.md](e001_REPLICATION.md) | Independent software reproduction commands and expected results |
+| [e001_REVIEW_BRIEF.md](e001_REVIEW_BRIEF.md) | Bounded acoustic protocol review request |
 | [e001_check_links.py](e001_check_links.py) | Local Markdown file-link check; no external URL or anchor validation |
 | [e001_physical_config.template.json](e001_physical_config.template.json) | Intentionally unset physical-analysis configuration; cannot run unchanged |
 | [e001_LICENSE.md](e001_LICENSE.md) | Explicit licenses for this package |
@@ -42,8 +46,24 @@ The generated records include complete, operator-rejected and structurally incom
 - Finite samples, monotonic time, sample-interval consistency and window coverage.
 - Configured low signal, peak/noise ratio, rail saturation, ambiguous peaks and boundary peaks.
 - Declared operator rejection, contact/trigger faults and nonpositive corrected transit.
+- Duplicate JSON keys are refused rather than silently taking the last value.
 
 Rejected records retain metrics and reasons; apparent speed and its uncertainty are withheld. A software quality pass is not evidence that coupling is physically correct or that a measurement is valid. Plausible-looking but wrong traces can still pass these limited checks.
+
+## Audit a declared group of records
+
+```sh
+python e001_batch.py e001_reference.json e001_changed.json e001_reduced.json e001_incomplete.json --config e001_demo_config.json --out e001_batch_output
+```
+
+Expected: **4 declared, 2 accepted, 1 rejected, 1 invalid; exit code 1**. Open
+`e001_batch_output/index.html` or inspect `manifest.json`. Use a new output
+directory each time. The batch records input, configuration and code hashes,
+preserves invalid records in the denominator and does not pool measurements
+across sessions. It does not infer independent sample size. Exit 0 means all
+records passed software checks; exit 2 means quality rejections without invalid
+records; exit 1 means invalid records or a batch-level input error. The latter
+may prevent creating a manifest. See [reproduction details](e001_REPLICATION.md).
 
 ## Estimator and uncertainty limitations
 
