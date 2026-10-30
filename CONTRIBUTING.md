@@ -25,6 +25,10 @@ Do not submit patient identifiers, confidential employer information, private co
 
 ## Review checklist
 
+For a first software contribution, run the [E001 reproduction exercise](research/e001_REPLICATION.md)
+and report a concrete discrepancy. For an acoustic measurement contribution,
+use the [independent protocol review brief](research/e001_REVIEW_BRIEF.md).
+
 - The problem and scope are clear.
 - Evidence level and limitations are explicit.
 - References, links and commands can be checked.
