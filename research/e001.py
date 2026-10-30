@@ -172,6 +172,8 @@ def analyze(path, config):
     absolute = [(t, abs(v-offset)) for t, v in signal]
     peak_time, peak = max(absolute, key=lambda row: row[1])
     ratio = peak/noise_rms if noise_rms else None
+    if not all(math.isfinite(v) for v in (peak, noise_rms)) or (ratio is not None and not math.isfinite(ratio)):
+        raise ValueError("Non-finite derived waveform metric")
     if peak < config["min_peak"]:
         reasons.append("signal_below_threshold")
     if noise_rms and ratio < config["min_peak_to_noise_ratio"]:
@@ -196,10 +198,12 @@ def analyze(path, config):
     # Partial standard uncertainty only: uniform sample quantization, supplied
     # trigger/delay and distance standard uncertainties, assumed independent.
     # Excludes peak-estimator bias, coupling, temperature effects and model error.
-    time_u = math.sqrt((acquisition["sample_interval_s"]/math.sqrt(12))**2 +
-                       acquisition["trigger_standard_uncertainty_s"]**2 +
-                       acquisition["delay_standard_uncertainty_s"]**2)
-    speed_u = speed*math.sqrt((geometry["path_standard_uncertainty_m"]/geometry["path_length_m"])**2+(time_u/transit)**2) if accepted else None
+    time_u = math.hypot(acquisition["sample_interval_s"]/math.sqrt(12),
+                        acquisition["trigger_standard_uncertainty_s"],
+                        acquisition["delay_standard_uncertainty_s"])
+    speed_u = speed*math.hypot(geometry["path_standard_uncertainty_m"]/geometry["path_length_m"], time_u/transit) if accepted else None
+    if accepted and not all(math.isfinite(v) for v in (transit, speed, speed_u)):
+        raise ValueError("Non-finite derived transit/speed/uncertainty")
     return {
         "analysis_version": VERSION, "run_id": record["run_id"],
         "session_id": record["session_id"], "specimen_id": record["specimen_id"],
@@ -232,10 +236,20 @@ def run(record_path, config_path, output):
     if output.resolve() == record_path.parent:
         raise ValueError("Use an output directory separate from the raw-record directory")
     result, times, values = analyze(record_path, read_json(config_path))
-    output.mkdir(parents=True, exist_ok=True)
     stem = result["run_id"]
-    (output/(stem+"_analysis.json")).write_text(json.dumps(result, indent=2, allow_nan=False)+"\n", encoding="utf-8")
-    write_plot(output/(stem+"_waveform.svg"), times, values, result)
+    analysis_path = output / (stem + "_analysis.json")
+    plot_path = output / (stem + "_waveform.svg")
+    if any(path.exists() for path in (analysis_path, plot_path)):
+        raise ValueError("Analysis output already exists; choose a new output directory")
+    protected = {record_path, Path(config_path).resolve(),
+                 inside(record_path.parent, read_json(record_path)["waveform"]["path"])}
+    if any(path.resolve() in protected for path in (analysis_path, plot_path)):
+        raise ValueError("Analysis output must not replace an input file")
+    serialized = json.dumps(result, indent=2, allow_nan=False) + "\n"
+    output.mkdir(parents=True, exist_ok=True)
+    with analysis_path.open("x", encoding="utf-8") as stream:
+        stream.write(serialized)
+    write_plot(plot_path, times, values, result)
     return result
 
 
@@ -257,7 +271,7 @@ def main():
             result = run(args.record, args.config, args.out)
             print(json.dumps(result, indent=2, allow_nan=False))
             return 0 if result["quality"] == "accepted" else 2
-    except (ValueError, OSError, KeyError, csv.Error) as error:
+    except (ValueError, OSError, KeyError, TypeError, ArithmeticError, csv.Error) as error:
         parser.exit(1, "Input error: " + str(error) + "\n")
     return 0
 

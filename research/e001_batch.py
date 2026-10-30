@@ -26,7 +26,7 @@ def write_report(output, manifest):
                      f'<a href="{html.escape(entry["waveform_file"], quote=True)}">Raw waveform plot</a>')
         rows.append("<tr>" + "".join(f"<td>{html.escape(str(v))}</td>" for v in
                     (entry["ordinal"], entry["record_name"], entry["run_id"] or "unresolved",
-                     entry["status"], entry["error"] or "See analysis JSON for quality reasons"))
+                     entry["status"], entry["error"] or "; ".join(entry["rejection_reasons"]) or "Software checks passed"))
                     + f"<td>{links}</td></tr>")
     counts = manifest["counts"]
     page = '''<!doctype html><html lang="en"><meta charset="utf-8">
@@ -81,7 +81,9 @@ def batch(record_paths, config_path, output):
     for ordinal, path in enumerate(paths, 1):
         entry = {"ordinal": ordinal, "record_name": path.name,
                  "record_sha256": None, "run_id": None, "status": "invalid",
-                 "error": None, "analysis_file": None, "waveform_file": None}
+                 "error": None, "rejection_reasons": [], "analysis_file": None,
+                 "waveform_file": None, "analysis_file_sha256": None,
+                 "waveform_file_sha256": None}
         try:
             entry["record_sha256"] = sha256(path)
             record = e001.read_json(path)
@@ -100,6 +102,7 @@ def batch(record_paths, config_path, output):
         try:
             result, times, values = e001.analyze(path, config)
             entry["status"] = result["quality"]
+            entry["rejection_reasons"] = result["rejection_reasons"]
             entry["analysis_file"] = f"analysis/{ordinal:04d}_{record['run_id']}_analysis.json"
             entry["waveform_file"] = f"analysis/{ordinal:04d}_{record['run_id']}_waveform.svg"
             results.append((entry, result, times, values))
@@ -138,6 +141,8 @@ def batch(record_paths, config_path, output):
         (output / entry["analysis_file"]).write_text(
             json.dumps(result, indent=2, allow_nan=False) + "\n", encoding="utf-8")
         e001.write_plot(output / entry["waveform_file"], times, values, result)
+        entry["analysis_file_sha256"] = sha256(output / entry["analysis_file"])
+        entry["waveform_file_sha256"] = sha256(output / entry["waveform_file"])
     (output / "manifest.json").write_text(
         json.dumps(manifest, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     write_report(output, manifest)

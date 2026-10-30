@@ -33,12 +33,16 @@ class BatchAuditTests(unittest.TestCase):
         page = (self.root / "results" / "index.html").read_text()
         self.assertIn("synthetic software checks only", page)
         self.assertIn("Declared records: <strong>4", page)
+        self.assertIn("signal_below_threshold", page)
         invalid = manifest["records"][-1]
         self.assertIn("calibration_id", invalid["error"])
         self.assertIsNone(invalid["analysis_file"])
         for entry in manifest["records"][:-1]:
             self.assertTrue((self.root / "results" / entry["analysis_file"]).is_file())
             self.assertIn("SYNTHETIC", (self.root / "results" / entry["waveform_file"]).read_text())
+            for kind in ("analysis_file", "waveform_file"):
+                self.assertEqual(entry[kind + "_sha256"],
+                                 hashlib.sha256((self.root / "results" / entry[kind]).read_bytes()).hexdigest())
 
     def test_missing_record_is_visible_not_silently_skipped(self):
         manifest = self.run_batch("reference", "missing")
