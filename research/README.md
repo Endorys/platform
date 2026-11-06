@@ -19,6 +19,9 @@ Detailed research documentation, prepared 26 October 2026. Founder and concept o
 
 ## Experiments and planning
 
+- [Runnable E001 package](e001_README.md)
+- [Independent software reproduction](e001_REPLICATION.md)
+- [Acoustic protocol review request](e001_REVIEW_BRIEF.md)
 - [ROADMAP.md](ROADMAP.md)
 - [EXPERIMENT_001.md](EXPERIMENT_001.md)
 - [EXPERIMENT_PROGRAMME.md](EXPERIMENT_PROGRAMME.md)

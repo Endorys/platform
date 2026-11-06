@@ -34,8 +34,10 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Test schema, provenance and failure handling
-        run: python -m unittest e001_tests -v
+        run: python -m unittest e001_tests e001_batch_tests -v
       - name: Run synthetic demonstration (not hardware validation)
         run: python e001_demo.py --out e001_ci_output
       - name: Check local Markdown file links
         run: python e001_check_links.py .
+      - name: Audit a synthetic accepted-record batch
+        run: python e001_batch.py e001_reference.json e001_changed.json --config e001_demo_config.json --out e001_ci_batch

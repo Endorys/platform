@@ -12,7 +12,8 @@ import random
 
 def generate(output):
     output = Path(output)
-    output.mkdir(parents=True, exist_ok=True)
+    # Never replace an existing acquisition/export directory with toy files.
+    output.mkdir(parents=True, exist_ok=False)
     rng = random.Random(20261029)
     conditions = [("reference",1500,1), ("changed",1560,1),
                   ("reduced",1500,.02), ("disconnected",1500,0),

@@ -153,6 +153,20 @@ class ResearchPipelineTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Non-finite"):
             e001.read_json(path)
 
+    def test_nonobject_configuration_has_clear_input_error(self):
+        with self.assertRaisesRegex(ValueError, "must be an object"):
+            e001.config_check([], "synthetic")
+
+    def test_finite_metadata_cannot_produce_accepted_infinite_speed(self):
+        path = self.mutate(lambda d: d["geometry"].update(path_length_m=1e308))
+        with self.assertRaisesRegex(ValueError, "Non-finite derived"):
+            e001.analyze(path, self.config)
+
+    def test_large_uncertainty_is_not_squared_into_overflow(self):
+        path = self.mutate(lambda d: d["acquisition"].update(trigger_standard_uncertainty_s=1e308))
+        with self.assertRaisesRegex(ValueError, "Non-finite derived"):
+            e001.analyze(path, self.config)
+
     def test_complete_output_and_raw_preserved(self):
         raw=self.inputs/"e001_reference.csv"
         before=raw.read_bytes()
@@ -166,6 +180,30 @@ class ResearchPipelineTests(unittest.TestCase):
     def test_output_must_be_separate(self):
         with self.assertRaisesRegex(ValueError,"separate"):
             e001.run(self.record(),self.inputs/"e001_demo_config.json",self.inputs)
+
+    def test_existing_analysis_artifact_is_preserved(self):
+        output = self.root / "results"
+        e001.run(self.record(), self.inputs / "e001_demo_config.json", output)
+        before = {p.name: p.read_bytes() for p in output.iterdir()}
+        with self.assertRaisesRegex(ValueError, "already exists"):
+            e001.run(self.record(), self.inputs / "e001_demo_config.json", output)
+        self.assertEqual(before, {p.name: p.read_bytes() for p in output.iterdir()})
+
+    def test_existing_plot_blocks_before_analysis_is_written(self):
+        output = self.root / "results"
+        output.mkdir()
+        existing = output / "reference_waveform.svg"
+        existing.write_text("retain this artifact")
+        with self.assertRaisesRegex(ValueError, "already exists"):
+            e001.run(self.record(), self.inputs / "e001_demo_config.json", output)
+        self.assertFalse((output / "reference_analysis.json").exists())
+        self.assertEqual(existing.read_text(), "retain this artifact")
+
+    def test_demo_generator_cannot_overwrite_an_existing_directory(self):
+        originals = {p.name: p.read_bytes() for p in self.inputs.iterdir()}
+        with self.assertRaises(FileExistsError):
+            generate(self.inputs)
+        self.assertEqual(originals, {p.name: p.read_bytes() for p in self.inputs.iterdir()})
 
     def test_demo_report_matches_expected_conditions(self):
         results=demo(self.root/"demo")
