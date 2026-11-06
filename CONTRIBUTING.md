@@ -2,6 +2,14 @@
 
 Thank you for helping make Endorys reproducible and scientifically useful.
 
+## Selective openness and release review
+
+Read [OPENNESS.md](OPENNESS.md) before proposing a new component or dataset. Keep public contributions reproducible and non-confidential. Covered contributions use their applicable existing licences; no copyright assignment or exclusive commercial permission is created by a contribution.
+
+Do not upload unpublished sensitive engineering, partner material or potentially patent-relevant details to public branches, issues, pull requests or workflow artifacts. First send a non-confidential enquiry to the maintainer; agree rights, confidentiality and access before private work begins. Contact alone does not create an NDA.
+
+Before merge, record provenance, authority to publish, evidence level, confidentiality/disclosure review, explicit licence, verification and maintainer approval. A public contribution must not silently change an existing licence or add restrictions to previously licensed reuse. Separate commercial work requires separately agreed terms.
+
 ## Before starting
 
 Read [project status](docs/STATUS.md), [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md) and [licensing status](research/LICENSING_STATUS.md). Original software uses Apache-2.0 and original documentation uses CC BY 4.0; read [license scope](LICENSE.md) for coverage and exclusions. Contributions to covered material should use the applicable license and identify any separate third-party terms.
