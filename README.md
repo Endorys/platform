@@ -1,5 +1,7 @@
 # Endorys
 
+**Selective openness:** public research, reproducible examples and independent review; future commercial engineering is reviewed separately before release. Existing licence grants remain in force. See [openness and commercial boundaries](OPENNESS.md).
+
 ## Run the E001 research package
 
 [Start here: executable experiment package](research/e001_README.md) · [Protocol](research/e001_PROTOCOL.md) · [Record schema](research/e001_record.schema.json) · [Automated software checks](https://github.com/Endorys/platform/actions/workflows/e001-research-checks.yml)
@@ -76,4 +78,4 @@ Founded by **Sadhu Shobab Bollipo**, Bengaluru, India. Endorys continues the pro
 
 Current stage: research concept and synthetic example. No validated medical device, clinical performance or therapeutic efficacy is asserted. See [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md).
 
-Original software is licensed under Apache-2.0 and original documentation under CC BY 4.0. Hardware designs, generated visuals and third-party material are excluded unless separately licensed. See [license scope](LICENSE.md) before reuse. Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
+Covered original software is licensed under Apache-2.0 and covered original documentation under CC BY 4.0; the file-specific scope and E001 package policy determine coverage. Hardware designs, generated visuals and third-party material are excluded unless separately licensed. See [license scope](LICENSE.md) before reuse. Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
