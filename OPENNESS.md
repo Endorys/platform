@@ -17,7 +17,7 @@ A future business agreement cannot promise exclusivity over rights already grant
 - Evidence corrections, independent reviews and results approved for release, including negative findings and uncertainty.
 - Clearly labelled concept illustrations, with separate asset permissions.
 
-The immediate goal remains **a reproducible acoustic phantom experiment**. Public synthetic output is not evidence of physical or clinical performance. Commercial considerations must not be used to misrepresent experimental outcomes.
+The immediate goal is **a reproducible acoustic phantom bench test: the Acoustic Reference Test (E001)**. Public synthetic output is not evidence of physical or clinical performance. Commercial considerations must not be used to misrepresent experimental outcomes.
 
 ## What requires separate review before publication
 
@@ -26,6 +26,23 @@ Potentially novel unpublished implementations, detailed hardware/CAD/manufacturi
 Keep confidential work in a **separate private repository or appropriately controlled storage** with named access. A branch, issue, pull request, attachment or workflow artifact in a public repository is not a confidential workspace. Do not upload sensitive material first and rely on deletion later.
 
 Do not publish employer information, partner correspondence, credentials, patient information or third-party designs without the necessary rights and authorization. Private storage is not by itself sufficient authorization for medical or personal data.
+
+## Release boundaries by asset
+
+| Asset | Publication approach | Permissions |
+|---|---|---|
+| Selected documentation and research protocols | Public after review | Existing CC BY 4.0 scope; retain attribution and limitations |
+| Selected reproducibility software | Public after review | Existing Apache-2.0 scope; preserve notices |
+| New hardware, firmware and commercial implementations | Private initially; component review before release | Explicit terms only after ownership review; existing dependencies keep their licences |
+| Experimental datasets | Review each release separately | Record provenance, authority, metadata and explicit dataset terms |
+| Partner material | Controlled access under agreed terms | No public release without authorization |
+| Branding, generated visuals and third-party assets | Separate asset review | No blanket grant through the software or documentation licence |
+
+These are publication defaults, not replacements for file-specific licences. A public repository can contain components with different permissions.
+
+## Dataset release record
+
+For each proposed dataset release, identify the source and evidence type (synthetic, non-biological physical, biological or clinical); collection authority and applicable consent or approvals; instrument configuration, calibration, units and processing; raw and derived files with hashes; excluded, rejected and invalid records with reasons; privacy and contractual restrictions; licence and provenance notices; limitations; and the approving maintainer, date and immutable version. No physical or clinical dataset is licensed by this checklist alone.
 
 ## Publication checklist
 
@@ -47,6 +64,8 @@ Public contributions remain under the applicable existing component terms. No co
 Discuss scope without revealing confidential implementation details. For a private collaboration enquiry, first email a non-confidential description to [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com). Email contact does not itself create an NDA; agree confidentiality and access before sharing sensitive material.
 
 ## Commercial development
+
+Endorys operates as an independent research and technology venture with selectively open documentation and reproducibility tools. The intended business model is paid R&D and potential commercial licensing of separately developed, rights-cleared technology. This is a development direction, not evidence of an available proprietary product or an incorporated company.
 
 Potential future activities include paid engineering, integration, support and separately licensed new components. No paid offering, validated device, licence revenue or partnership is established by this document. Reuse allowed by existing public licences does not require buying a commercial agreement. Endorys branding and third-party rights remain separate.
 
