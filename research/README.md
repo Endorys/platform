@@ -20,7 +20,7 @@ Detailed research documentation, prepared 26 October 2026. Founder and concept o
 ## Experiments and planning
 
 - [ROADMAP.md](ROADMAP.md)
-- [EXPERIMENT_001.md](EXPERIMENT_001.md)
+- [Acoustic Reference Test (E001)](EXPERIMENT_001.md)
 - [EXPERIMENT_PROGRAMME.md](EXPERIMENT_PROGRAMME.md)
 - [RESULTS_TEMPLATE.md](RESULTS_TEMPLATE.md)
 

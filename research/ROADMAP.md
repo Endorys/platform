@@ -16,7 +16,7 @@ All stages below are planned. Completion requires linked records; a diagram or c
 
 ## Near-term sequence
 1. Record what hardware and physical data actually exist; leave missing entries explicit.
-2. Execute [Experiment 001](EXPERIMENT_001.md).
+2. Run the [Acoustic Reference Test (E001)](EXPERIMENT_001.md).
 3. Compare direct and routed paths only after the direct baseline is stable.
 4. Add one variable at a time and preserve failed runs.
 5. Select an application from measured feasibility and a clear unmet decision, not illustration quality.

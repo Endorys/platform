@@ -1,4 +1,6 @@
-# E001 package license scope
+<a name="e001-package-license-scope"></a>
+
+# Acoustic Reference Test (E001) package license scope
 
 Copyright 2026 Sadhu Shobab Bollipo / Endorys, for original material to the extent applicable rights are held. Effective 29 October 2026.
 
