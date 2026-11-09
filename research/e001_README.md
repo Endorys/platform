@@ -1,4 +1,6 @@
-# Experiment 001: runnable research package
+<a name="experiment-001-runnable-research-package"></a>
+
+# Acoustic Reference Test (E001) research package
 
 Version 0.1.0 · 29 October 2026 · Sadhu Shobab Bollipo / Endorys
 
@@ -57,8 +59,8 @@ Noise/peak/rail thresholds are unit- and instrument-dependent. Toy thresholds ca
 
 Use the protocol and checklist first. Equipment, exposure settings, material properties, sample size, numerical tolerances and the full uncertainty budget remain unresolved until documented and reviewed. There is no hardware driver or human-testing procedure in this package. Do not use it to control an instrument or make medical decisions.
 
-Invitation: **independent acoustic protocol review**. Review the fixed-path baseline, estimator choice, coupling/reseating controls and uncertainty budget. Open an issue titled `E001 independent protocol review`, identifying the specific protocol section and proposed correction.
+Invitation: **independent acoustic protocol review**. Review the fixed-path baseline, estimator choice, coupling/reseating controls and uncertainty budget. Open an issue titled `Acoustic Reference Test — independent protocol review`, identifying the specific protocol section and proposed correction.
 
 ## Relationship to existing material
 
-This executable package operationalizes the existing Experiment 001 outline; it does not supersede its unexecuted physical status. Source architecture, evidence register and programme remain in the repository's research library. Original software is Apache-2.0; original documentation and synthetic example records are CC BY 4.0 as scoped in [e001_LICENSE.md](e001_LICENSE.md). No physical dataset is included.
+This executable package operationalizes the [Acoustic Reference Test outline](EXPERIMENT_001.md); it does not supersede its unexecuted physical status. Source architecture, evidence register and programme remain in the repository's research library. Original software is Apache-2.0; original documentation and synthetic example records are CC BY 4.0 as scoped in [e001_LICENSE.md](e001_LICENSE.md). No physical dataset is included.

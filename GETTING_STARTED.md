@@ -5,7 +5,7 @@
 1. Read the [current status](docs/STATUS.md).
 2. Follow the [architecture](research/ARCHITECTURE.md) and [branch map](docs/BRANCHES.md).
 3. Review the [proof register](research/EVIDENCE_REGISTER.md) before interpreting concept images as capabilities.
-4. Read [Experiment 001](research/EXPERIMENT_001.md) to see the immediate research priority.
+4. Read [Acoustic Reference Test (E001)](research/EXPERIMENT_001.md) to see the immediate research priority.
 
 ## Run the synthetic example
 
@@ -32,7 +32,7 @@ Inspect [the script](research/synthetic_acoustic_demo.py), [data specification](
 ## Choose a first contribution
 
 - Evidence reviewer: verify one primary citation and its exact claim.
-- Engineer: propose a measured error budget for E001.
+- Engineer: propose a measured error budget for the Acoustic Reference Test.
 - Software contributor: improve a reproducible example with explicit assumptions.
 - Domain specialist: define one application decision and its independent reference.
 

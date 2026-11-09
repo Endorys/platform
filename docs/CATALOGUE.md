@@ -20,7 +20,7 @@ Existing URLs are preserved. Navigation pages are guides; linked research docume
 ## Experiments and planning
 
 - [ROADMAP.md](../research/ROADMAP.md)
-- [EXPERIMENT_001.md](../research/EXPERIMENT_001.md)
+- [Acoustic Reference Test (E001)](../research/EXPERIMENT_001.md)
 - [EXPERIMENT_PROGRAMME.md](../research/EXPERIMENT_PROGRAMME.md)
 - [RESULTS_TEMPLATE.md](../research/RESULTS_TEMPLATE.md)
 

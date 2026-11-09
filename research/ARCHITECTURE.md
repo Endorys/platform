@@ -92,7 +92,7 @@ These are required fields to formalize in the [data specification](DATA_SPECIFIC
 
 ### Separate the implementation paths
 
-**Baseline path:** conventional direct acoustic source/transducer arrangement → fixed non-biological phantom → receiver/digitizer → raw records → simple estimator and quality checks. This is the dependency for [Experiment 001](EXPERIMENT_001.md).
+**Baseline path:** conventional direct acoustic source/transducer arrangement → fixed non-biological phantom → receiver/digitizer → raw records → simple estimator and quality checks. This is the dependency for the [Acoustic Reference Test (E001)](EXPERIMENT_001.md).
 
 **Routed research path:** source bank → experimentally characterized physical routing path → selected passive contact → phantom → distributed receivers. Compare this against the baseline, measuring loss, bandwidth, leakage, settling and repeatability before increasing node count. Routing feasibility remains unresolved.
 

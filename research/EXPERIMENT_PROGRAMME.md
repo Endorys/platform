@@ -2,7 +2,7 @@
 
 | ID | Investigation | Main confounder/control | Output |
 |---|---|---|---|
-| E001 | Direct acoustic phantom baseline | Coupling, geometry, temperature, electronic delay | Repeatability and uncertainty report |
+| E001 | [Acoustic Reference Test](EXPERIMENT_001.md) | Coupling, geometry, temperature, electronic delay | Repeatability and uncertainty report |
 | E002 | Source routing | Direct reference, path length, leakage, settling | Per-path transfer function and switching limits |
 | E003 | Conformal geometry | Independent position reference and reseating | Pose/geometry error propagation |
 | E004 | Controlled mechanical response | Calibrated loading and boundary conditions | One reference-checked parameter |
