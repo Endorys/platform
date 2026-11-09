@@ -13,7 +13,7 @@
 | What must every measurement contain? | [Data specification](../research/DATA_SPECIFICATION.md), [example record](../research/observation_example.json) |
 | Which software modules are proposed? | [Software plan](../research/SOFTWARE_PLAN.md) |
 | What is runnable now? | [Synthetic acoustic example](../research/synthetic_acoustic_demo.py) |
-| What physical work comes first? | [E001](../research/EXPERIMENT_001.md) |
+| What physical work comes first? | [Acoustic Reference Test (E001)](../research/EXPERIMENT_001.md) |
 
 ## Reproduction package for a future experiment
 

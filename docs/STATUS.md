@@ -25,6 +25,6 @@ A published precedent belongs to its original authors and apparatus. It does not
 
 ## Immediate work
 
-[Experiment 001](../research/EXPERIMENT_001.md) → [roadmap gates](../research/ROADMAP.md) → [results template](../research/RESULTS_TEMPLATE.md).
+[Acoustic Reference Test (E001)](../research/EXPERIMENT_001.md) → [roadmap gates](../research/ROADMAP.md) → [results template](../research/RESULTS_TEMPLATE.md).
 
 Known missing assets: verified physical dataset, final BOM, native CAD/schematics, hardware drivers, clinical model and approved device. Their absence is tracked explicitly rather than filled with invented specifications.

@@ -11,7 +11,7 @@
 
 ## Produce new evidence
 
-Use the [roadmap](../research/ROADMAP.md), [experiment programme](../research/EXPERIMENT_PROGRAMME.md) and [E001 protocol](../research/EXPERIMENT_001.md). Freeze the question, independent units, controls and decision criteria before confirmatory data collection.
+Use the [roadmap](../research/ROADMAP.md), [experiment programme](../research/EXPERIMENT_PROGRAMME.md) and [Acoustic Reference Test (E001) outline](../research/EXPERIMENT_001.md). Freeze the question, independent units, controls and decision criteria before confirmatory data collection.
 
 Publish a [result record](../research/RESULTS_TEMPLATE.md) with raw-data provenance, calibration, uncertainty, code version, deviations and negative findings. The [results register](../research/RESULTS_AND_NEGATIVE_FINDINGS.md) currently records the absence of integrated physical evidence.
 
