@@ -6,7 +6,7 @@ Endorys publishes selected research so others can inspect assumptions, reproduce
 
 ## Existing permissions remain in force
 
-The grants in [LICENSE.md](LICENSE.md), [the E001 package policy](research/e001_LICENSE.md), and applicable file notices continue unchanged. Covered Apache-2.0 software and CC BY 4.0 documentation remain commercially reusable under their terms. No fee, noncommercial restriction, confidentiality condition or additional approval is imposed on that licensed reuse. Existing third-party terms remain applicable.
+The grants in [LICENSE.md](LICENSE.md), [the Acoustic Reference Test package policy](research/e001_LICENSE.md), and applicable file notices continue unchanged. Covered Apache-2.0 software and CC BY 4.0 documentation remain commercially reusable under their terms. No fee, noncommercial restriction, confidentiality condition or additional approval is imposed on that licensed reuse. Existing third-party terms remain applicable.
 
 A future business agreement cannot promise exclusivity over rights already granted to others. This policy neither recalls public copies nor makes earlier disclosures confidential.
 

@@ -6,7 +6,7 @@ An independent research and technology venture with selectively open documentati
 
 ## Run the Acoustic Reference Test (E001) research package
 
-[Start here: executable experiment package](research/e001_README.md) · [Protocol](research/e001_PROTOCOL.md) · [Record schema](research/e001_record.schema.json) · [Automated software checks](https://github.com/Endorys/platform/actions/workflows/e001-research-checks.yml)
+[Start here: runnable research package](research/e001_README.md) · [Protocol](research/e001_PROTOCOL.md) · [Record schema](research/e001_record.schema.json) · [Automated software checks](https://github.com/Endorys/platform/actions/workflows/e001-research-checks.yml)
 
 The package includes raw-file integrity checks, waveform quality checks, an illustrative peak estimator, partial uncertainty reporting, plots, synthetic examples and physical-experiment planning templates. Python 3.11+; no third-party runtime dependencies.
 
@@ -60,9 +60,9 @@ Matrix provides the proposed sensing surface; Interface defines contact and cont
 
 ## Immediate goal and invitation
 
-**Immediate goal: a reproducible acoustic phantom bench test.** Establish a repeatable fixed-geometry acoustic phantom baseline, then determine whether coupling, geometry and routing errors permit the intended measurement. See [Acoustic Reference Test (E001)](research/EXPERIMENT_001.md) and the [evidence-gated roadmap](research/ROADMAP.md).
+**Immediate goal: a reproducible acoustic phantom bench test.** Establish a repeatable fixed-geometry acoustic phantom baseline, then determine whether coupling, geometry and routing errors permit the intended measurement. See the [Acoustic Reference Test](research/EXPERIMENT_001.md) and the [evidence-gated roadmap](research/ROADMAP.md).
 
-**Invitation: independent protocol review.** We invite an ultrasound/acoustic measurement researcher to review [Acoustic Reference Test (E001)](research/EXPERIMENT_001.md), especially coupling controls, geometry uncertainty and acceptance criteria, before physical data collection. Please open an [Experiment proposal issue](https://github.com/Endorys/platform/issues/new/choose) titled “E001 independent protocol review.”
+**Invitation: independent protocol review.** We invite an ultrasound/acoustic measurement researcher to review the [Acoustic Reference Test](research/EXPERIMENT_001.md), especially coupling controls, geometry uncertainty and acceptance criteria, before physical data collection. Please open an [Experiment proposal issue](https://github.com/Endorys/platform/issues/new/choose) titled “Acoustic Reference Test — independent protocol review.”
 
 ## Repository map
 
@@ -84,4 +84,4 @@ Founded by **Sadhu Shobab Bollipo**, Bengaluru, India. Endorys continues the pro
 
 Current stage: research concept and synthetic example. No validated medical device, clinical performance or therapeutic efficacy is asserted. See [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md).
 
-Covered original software is licensed under Apache-2.0 and covered original documentation under CC BY 4.0; the file-specific scope and E001 package policy determine coverage. Hardware designs, generated visuals and third-party material are excluded unless separately licensed. See [license scope](LICENSE.md) before reuse. Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
+Covered original software is licensed under Apache-2.0 and covered original documentation under CC BY 4.0; the file-specific scope and Acoustic Reference Test package policy determine coverage. Hardware designs, generated visuals and third-party material are excluded unless separately licensed. See [license scope](LICENSE.md) before reuse. Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).

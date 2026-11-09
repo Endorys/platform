@@ -6,7 +6,7 @@ Documentation changes are recorded separately from experimental progress.
 
 - Labelled each showcased visual “Concept illustration—not a prototype or measured output.”
 - Stated the immediate goal: a reproducible acoustic phantom experiment.
-- Added a focused invitation for independent review of Experiment 001.
+- Added a focused invitation for independent review of the Acoustic Reference Test (E001).
 - Licensed original software under Apache-2.0 and original documentation under CC BY 4.0 with explicit exclusions.
 
 ## 2026-10-26 — Repository organization
