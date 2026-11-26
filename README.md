@@ -83,6 +83,28 @@ Endorys intends to pursue paid R&D and potential licensing of separately develop
 
 Founded by **Sadhu Shobab Bollipo**, Bengaluru, India. Endorys continues the programme previously called JUPITER, preserving its breast-first motivation and later clinical and materials/NDT exploration.
 
+#### International Standards & Regulatory Alignment
+
+The **ENDORYS™ (E001)** coupling-integrity and quantitative ultrasound repeatability framework is structured around established international clinical, medical safety, and industrial non-destructive testing (NDT) standards: 
+
+#### 1. Clinical Quantitative Ultrasound (AIUM–RSNA QIBA PEQUS)
+
+* **Biomarker Repeatability:** Evaluates inter-placement **Coefficient of Variation (CV%)**, **Time-of-Flight (ToF)** stability, and amplitude attenuation consistency across non-planar tissue-mimicking phantoms (1540 m/s soft-tissue background, 1585 m/s stiff inclusion).
+* **Operator Independence:** Isolates and removes contact-pressure and interfacial air-gap variability required by the **RSNA Quantitative Imaging Biomarkers Alliance (QIBA) Pulse-Echo Quantitative Ultrasound (PEQUS)** profiles.
+
+#### 2. Medical Electrical & Software Safety (IEC 60601-2-37:2024 & IEC 62304)
+
+* **Acoustic Output & Thermal Safety (IEC 60601-2-37:2024, Ed. 3.0):** Designed for low-intensity sequential pitch-catch interrogation (~100 kPa peak acoustic pressure at 1.7–2.4 MHz), operating well below diagnostic Mechanical Index (MI ≤ 1.9) and Thermal Index (TIS/TIB ≤ 1.0) limits.
+* **Deterministic Safety Gating (IEC 62304 & ISO 14971):** Implements auditable, rule-based **Coupling Quality Index (CQI)** frame rejection—preventing decoupled or air-gap corrupted waveforms from propagating into downstream diagnostic metrics without black-box neural-network drift.
+
+#### 3. Industrial Curved-Surface NDT (ASTM E1316 / ISO 16810)
+
+* **Continuous Couplant Verification:** Directly addresses **ASTM E1316** and **ISO 16810** ultrasonic testing requirements for verifying continuous acoustic boundary coupling across non-planar composite laminates (CFRP/GFRP) and cylindrical pipelines without mechanical raster scanning.
+
+#### 4. Open Data & Benchmark Interoperability
+
+* **Supported Formats:** Ingests standard CSV waveform captures (Philips PM3232 oscilloscope / k-wave-python FDTD simulations) alongside HDF5 **Ultrasound File Format (.uff)** datasets (research/uff_loader.py).
+* **Permanent Archival Citation:** Benchmark releases are permanently archived on Zenodo under **[DOI: 10.5281/zenodo.24555614](https://doi.org/10.5281/zenodo.24555614)**.
 Current stage: research concept and synthetic example. No validated medical device, clinical performance or therapeutic efficacy is asserted. See [scope and limits](research/RESEARCH_SAFETY_AND_LIMITS.md).
 
 Covered original software is licensed under Apache-2.0 and covered original documentation under CC BY 4.0; the file-specific scope and Acoustic Reference Test package policy determine coverage. Hardware designs, generated visuals and third-party material are excluded unless separately licensed. See [license scope](LICENSE.md) before reuse. Citation information is in [CITATION.cff](CITATION.cff). Contact: [sadhu.shobab@gmail.com](mailto:sadhu.shobab@gmail.com).
