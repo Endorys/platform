@@ -28,4 +28,7 @@ The covered material may be reused and adapted, including commercially, under it
 
 New code, hardware, datasets and visuals must carry an explicit applicable license or be added to this scope through a reviewed change. Contributions must identify provenance and rights; no rights can be granted on someone else's behalf.
 
+EXPLICIT HARDWARE AND SYSTEM PATENT RESERVATION (IN 202641134091):
+Notwithstanding Section 3 of the Apache License, Version 2.0, no express or implied license is granted under any patent claims covering physical conformable ultrasound transducer arrays, segmented living-hinge carrier substrates, impedance-matched solid hydrogel or pressure-regulated assisted-coupling interfaces, or closed-loop hardware switching apparatus claimed in Indian Patent Application No. 202641134091 and its international PCT or national phase counterparts. Commercial hardware or clinical SaMD licensing inquiries: sadhu.shobab@gmail.com | https://endorys.com
+
 Read the full linked texts. Contact: sadhu.shobab@gmail.com.
