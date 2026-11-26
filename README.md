@@ -83,6 +83,7 @@ Endorys intends to pursue paid R&D and potential licensing of separately develop
 
 Founded by **Sadhu Shobab Bollipo**, Bengaluru, India. Endorys continues the programme previously called JUPITER, preserving its breast-first motivation and later clinical and materials/NDT exploration.
 
+
 #### International Standards & Regulatory Alignment
 
 The **ENDORYS™ (E001)** coupling-integrity and quantitative ultrasound repeatability framework is structured around established international clinical, medical safety, and industrial non-destructive testing (NDT) standards: 
