@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/github/1433881965.svg)](https://doi.org/10.5281/zenodo.24555613)
 # Endorys
 
 An independent research and technology venture with selectively open documentation and reproducibility tools.
