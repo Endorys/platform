@@ -43,6 +43,19 @@ Detailed research documentation, prepared 26 October 2026. Founder and concept o
 - [RESEARCH_SAFETY_AND_LIMITS.md](RESEARCH_SAFETY_AND_LIMITS.md)
 - [RESEARCH_ISSUE_TEMPLATES.md](RESEARCH_ISSUE_TEMPLATES.md)
 
+- 
+
 ## Reading guidance
 
 Begin with architecture and the proof register, then follow the experiment roadmap. The literature and technical reviews retain their original 16 October review date and historical-scope caveats. No integrated physical or clinical result is established here. Issue drafting notes are retained for background; the active GitHub templates now live under .github/ISSUE_TEMPLATE/.
+
+
+---
+
+## Intellectual Property & Legal Notice
+
+* **Entity:** M/s Endorys (Registered MSME: `UDYAM-KR-03-0786660`, Bengaluru, Karnataka, India)
+* **Trademark:** **ENDORYS™** is a proprietary trademark of Sadhu Shobab Bollipo trading as M/s Endorys.
+* **Patent Pending:** Hardware architectures, segmented living-hinge carrier substrates, impedance-matched assisted-coupling interfaces, and closed-loop sequential coupling-verification systems implemented or benchmarked herein are the subject of **Indian Patent Application No. `202641134091`** (Priority Date: `07 November 2026`; PCT-eligible).
+* **Software License vs. Hardware Patent Rights:** Software scripts in this repository are licensed under `Apache-2.0` subject to the explicit hardware and system patent reservation in [`LICENSE.md`](LICENSE.md).
+
