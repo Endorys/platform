@@ -57,5 +57,5 @@ Begin with architecture and the proof register, then follow the experiment roadm
 * **Entity:** M/s Endorys (Registered MSME: `UDYAM-KR-03-0786660`, Bengaluru, Karnataka, India)
 * **Trademark:** **ENDORYS™** is a proprietary trademark of Sadhu Shobab Bollipo trading as M/s Endorys.
 * **Patent Pending:** Hardware architectures, segmented living-hinge carrier substrates, impedance-matched assisted-coupling interfaces, and closed-loop sequential coupling-verification systems implemented or benchmarked herein are the subject of **Indian Patent Application No. `202641134091`** (Priority Date: `07 November 2026`; PCT-eligible).
-* **Software License vs. Hardware Patent Rights:** Software scripts in this repository are licensed under `Apache-2.0` subject to the explicit hardware and system patent reservation in [`LICENSE.md`](LICENSE.md).
+* **Software License vs. Hardware Patent Rights:** Software scripts in this repository are licensed under `Apache-2.0` subject to the explicit hardware and system patent reservation in [`LICENSE.md`](../LICENSE.md).
 
