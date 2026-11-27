@@ -5,11 +5,11 @@ type: software
 authors:
   - family-names: "Bollipo"
     given-names: "Sadhu Shobab"
-    orcid: "https://orcid.org"
+    orcid: "https://orcid.org/0009-0006-7846-7884"
     affiliation: "M/s Endorys (UDYAM-KR-03-0786660)"
     city: "Bengaluru"
     country: "IN"
-repository-code: "https://github.com"
+repository-code: "https://github.com/Endorys/platform"
 url: "https://endorys.com"
 doi: "10.5281/zenodo.24555614"
 version: "0.1.1"
