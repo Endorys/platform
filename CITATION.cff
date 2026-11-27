@@ -1,9 +1,31 @@
 cff-version: 1.2.0
-message: "Please cite the specific repository revision used. This documentation is not a validated medical device."
-title: "Endorys: research architecture and validation documentation"
+title: "ENDORYS Platform: Protocol E001 Acoustic Reference & Coupling Quality Index (CQI) Benchmark"
+message: "If you use this software, phantom protocol, or synthetic RF benchmark dataset in your research, please cite it using the metadata below."
 type: software
 authors:
-  - family-names: Bollipo
-    given-names: Sadhu Shobab
-repository-code: "https://github.com/Endorys/platform"
-url: "https://github.com/Endorys/platform"
+  - family-names: "Bollipo"
+    given-names: "Sadhu Shobab"
+    orcid: "https://orcid.org"
+    affiliation: "M/s Endorys (UDYAM-KR-03-0786660)"
+    city: "Bengaluru"
+    country: "IN"
+repository-code: "https://github.com"
+url: "https://endorys.com"
+doi: "10.5281/zenodo.24555614"
+version: "0.1.1"
+date-released: "2026-11-26"
+license: "Apache-2.0"
+keywords:
+  - "quantitative ultrasound"
+  - "acoustic coupling"
+  - "coupling quality index"
+  - "conformable ultrasound"
+  - "speed of sound"
+  - "acoustic metrology"
+  - "QIBA PEQUS"
+  - "non-destructive testing"
+abstract: >-
+  Open-science reference software, k-Wave FDTD simulation tools, HDF5 .uff loaders,
+  and Protocol E001 acoustic repeatability benchmarks for curved-surface quantitative
+  ultrasound and closed-loop Coupling Quality Index (CQI) gating (Patent Pending:
+  IN 202641134091).
